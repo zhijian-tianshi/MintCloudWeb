@@ -1,0 +1,19 @@
+{
+  "name": "mint-cloud-web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "个人前端开发使用，主要用于可视化 mqtt消息，ai ，待办，博客自动更新发布 等功能",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.4.38"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.2",
+    "vite": "^5.4.1"
+  }
+}
