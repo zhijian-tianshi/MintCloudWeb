@@ -1,0 +1,41 @@
+/** zeta-web-layui 自定义样式，样式覆盖 */
+
+/** 表单label, 表格分页, 按钮, 单选, 复选, switch, 文本框, 数字输入框... 文字不允许选中 */
+.layui-form-label, .layui-table-page,
+.layui-btn, .layui-layer-btn, .layui-radio, .layui-checkbox,
+.layui-form-switch,
+.layui-input-prepend, .layui-input-wrapper,
+.layui-input-number .layui-input input {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/** 卡片标题不允许选中。 这个看需求，可以注释掉 */
+.layui-card-header-title {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/** 表格单元格文字不允许选中。 这个看需求，可以注释掉 */
+/* .layui-table-cell {
+  -webkit-user-select: none;
+  user-select: none;
+} */
+
+/** 修复popper在弹窗中不显示问题 */
+.layui-popper {
+  z-index: 100050!important;
+}
+
+/** 修复表格滚动条样式 */
+.layui-table-main::-webkit-scrollbar {
+  width: 12px!important;
+  height: 12px!important;
+}
+.layui-table-main::-webkit-scrollbar-thumb {
+  border-radius:6px!important;
+  background-color: #cfcfcf!important;
+}
+.layui-table-main::-webkit-scrollbar-thumb:hover {
+  background-color: #b6b6b6!important;
+}

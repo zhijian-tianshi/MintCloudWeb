@@ -1,0 +1,33 @@
+/** zeta-web-layui 公共样式 */
+
+/** 容器 */
+.z-container {
+  padding: var(--layout-content-padding)!important;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.z-search-layout {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.z-table-box {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: var(--global-border-radius);
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+/** TODO: 辅助类...  */
+
+.z-text-center {
+  text-align: center
+}
+
+/** 辅助类：文字不允许选中 */
+.z-user-select-none {
+  -webkit-user-select: none;
+  user-select: none;
+}
