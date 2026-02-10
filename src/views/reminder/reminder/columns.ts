@@ -1,0 +1,56 @@
+export const columns = [
+  {
+    title: '#',
+    type: 'number',
+    width: '50px',
+    fixed: 'left',
+  },
+  {
+    key: 'title',
+    title: '提醒标题',
+    minWidth: '180px',
+    ellipsisTooltip: true,
+  },
+  {
+    key: 'type',
+    title: '类型',
+    align: 'center',
+    width: '120px',
+    customSlot: 'type',
+  },
+  {
+    key: 'priority',
+    title: '优先级',
+    align: 'center',
+    width: '120px',
+    customSlot: 'priority',
+  },
+  {
+    key: 'channelNames',
+    title: '提醒方式',
+    minWidth: '180px',
+    customSlot: 'channelNames',
+  },
+  {
+    key: 'dueTime',
+    title: '提醒时间',
+    align: 'center',
+    width: '180px',
+    sort: true,
+  },
+  {
+    key: 'state',
+    title: '状态',
+    align: 'center',
+    width: '120px',
+    customSlot: 'state',
+  },
+  {
+    key: 'operator',
+    title: '操作',
+    align: 'center',
+    width: '180px',
+    customSlot: 'operator',
+    fixed: 'right',
+  },
+]

@@ -38,6 +38,9 @@ export const loginUserInfo = {
     'task:update',
     'task:delete',
     'task:log:view',
+    'reminder:view',
+    'reminder:channel:view',
+    'reminder:history:view',
   ],
   roles: [
     'SUPER_ADMIN',
@@ -171,6 +174,61 @@ export const loginUserMenu = [
       hide: false,
       keepAlive: false
     }
+  },
+  {
+    id: '184000001',
+    parentId: '0',
+    children: [
+      {
+        id: '184000002',
+        parentId: '184000001',
+        name: 'reminder_reminder',
+        path: '/reminder/reminder',
+        component: 'reminder/reminder',
+        meta: {
+          title: '待办提醒',
+          icon: '',
+          hide: false,
+          keepAlive: false,
+        },
+      },
+      {
+        id: '184000003',
+        parentId: '184000001',
+        name: 'reminder_channels',
+        path: '/reminder/channels',
+        component: 'reminder/channels',
+        meta: {
+          title: '提醒方式管理',
+          icon: '',
+          hide: false,
+          keepAlive: false,
+        },
+      },
+      {
+        id: '184000004',
+        parentId: '184000001',
+        name: 'reminder_history',
+        path: '/reminder/history',
+        component: 'reminder/history',
+        meta: {
+          title: '提醒历史',
+          icon: '',
+          hide: false,
+          keepAlive: false,
+        },
+      },
+    ],
+    name: 'reminder',
+    path: '/reminder',
+    component: '',
+    redirect: '/reminder/reminder',
+    meta: {
+      title: '提醒中心',
+      icon: 'layui-icon-notice',
+      hide: false,
+      keepAlive: false,
+    },
   },
   {
     id: '90000',
