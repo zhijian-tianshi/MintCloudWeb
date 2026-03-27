@@ -22,15 +22,25 @@ export const baseRoutes: RouteRecordRaw[] = [
     path: HOME_ROUTE,
     name: 'root',
     component: BaseLayout,
-    children: [{
-      name: 'home',
-      path: '',
-      component: () => import('~/views/index.vue'),
-      meta: {
-        title: '首页',
-        affix: true,
+    children: [
+      {
+        name: 'home',
+        path: '',
+        component: () => import('~/views/index.vue'),
+        meta: {
+          title: '首页',
+          affix: true,
+        },
       },
-    }],
+      {
+        name: 'iot_telemetry',
+        path: 'iot/telemetry',
+        component: () => import('~/views/iot/telemetry/index.vue'),
+        meta: {
+          title: 'IoT遥测中心',
+        },
+      },
+    ],
   },
   {
     path: LOGIN_ROUTE,

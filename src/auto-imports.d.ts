@@ -143,6 +143,7 @@ declare global {
   const pageOptLogApi: typeof import('./api/system/optLog')['pageOptLogApi']
   const pageRoleApi: typeof import('./api/system/role')['pageRoleApi']
   const pageTaskLogApi: typeof import('./api/job/taskLog')['pageTaskLogApi']
+  const pageTelemetryHistoryApi: typeof import('./api/iot/telemetry')['pageTelemetryHistoryApi']
   const pageUserApi: typeof import('./api/system/user')['pageUserApi']
   const pausableWatch: typeof import('@vueuse/core')['pausableWatch']
   const pauseJobApi: typeof import('./api/job/job')['pauseJobApi']
@@ -154,6 +155,7 @@ declare global {
   const queryFileApi: typeof import('./api/system/file')['queryFileApi']
   const queryJobClassListApi: typeof import('./api/job/job')['queryJobClassListApi']
   const queryRoleApi: typeof import('./api/system/role')['queryRoleApi']
+  const queryTelemetryDevicesApi: typeof import('./api/iot/telemetry')['queryTelemetryDevicesApi']
   const queryUserApi: typeof import('./api/system/user')['queryUserApi']
   const reactify: typeof import('@vueuse/core')['reactify']
   const reactifyObject: typeof import('@vueuse/core')['reactifyObject']
@@ -162,6 +164,7 @@ declare global {
   const reactiveOmit: typeof import('@vueuse/core')['reactiveOmit']
   const reactivePick: typeof import('@vueuse/core')['reactivePick']
   const readonly: typeof import('vue')['readonly']
+  const realtimeTelemetryApi: typeof import('./api/iot/telemetry')['realtimeTelemetryApi']
   const ref: typeof import('vue')['ref']
   const refAutoReset: typeof import('@vueuse/core')['refAutoReset']
   const refDebounced: typeof import('@vueuse/core')['refDebounced']
@@ -182,6 +185,7 @@ declare global {
   const shallowRef: typeof import('vue')['shallowRef']
   const store: typeof import('./store/index')['store']
   const storeToRefs: typeof import('pinia')['storeToRefs']
+  const summaryTelemetryHistoryApi: typeof import('./api/iot/telemetry')['summaryTelemetryHistoryApi']
   const syncRef: typeof import('@vueuse/core')['syncRef']
   const syncRefs: typeof import('@vueuse/core')['syncRefs']
   const sysBusyApi: typeof import('./api/example/exceptions')['sysBusyApi']
@@ -193,6 +197,7 @@ declare global {
   const toRef: typeof import('vue')['toRef']
   const toRefs: typeof import('vue')['toRefs']
   const toValue: typeof import('vue')['toValue']
+  const trendTelemetryHistoryApi: typeof import('./api/iot/telemetry')['trendTelemetryHistoryApi']
   const triggerRef: typeof import('vue')['triggerRef']
   const tryOnBeforeMount: typeof import('@vueuse/core')['tryOnBeforeMount']
   const tryOnBeforeUnmount: typeof import('@vueuse/core')['tryOnBeforeUnmount']
@@ -545,6 +550,7 @@ declare module 'vue' {
     readonly pageOptLogApi: UnwrapRef<typeof import('./api/system/optLog')['pageOptLogApi']>
     readonly pageRoleApi: UnwrapRef<typeof import('./api/system/role')['pageRoleApi']>
     readonly pageTaskLogApi: UnwrapRef<typeof import('./api/job/taskLog')['pageTaskLogApi']>
+    readonly pageTelemetryHistoryApi: UnwrapRef<typeof import('./api/iot/telemetry')['pageTelemetryHistoryApi']>
     readonly pageUserApi: UnwrapRef<typeof import('./api/system/user')['pageUserApi']>
     readonly pausableWatch: UnwrapRef<typeof import('@vueuse/core')['pausableWatch']>
     readonly pauseJobApi: UnwrapRef<typeof import('./api/job/job')['pauseJobApi']>
@@ -556,6 +562,7 @@ declare module 'vue' {
     readonly queryFileApi: UnwrapRef<typeof import('./api/system/file')['queryFileApi']>
     readonly queryJobClassListApi: UnwrapRef<typeof import('./api/job/job')['queryJobClassListApi']>
     readonly queryRoleApi: UnwrapRef<typeof import('./api/system/role')['queryRoleApi']>
+    readonly queryTelemetryDevicesApi: UnwrapRef<typeof import('./api/iot/telemetry')['queryTelemetryDevicesApi']>
     readonly queryUserApi: UnwrapRef<typeof import('./api/system/user')['queryUserApi']>
     readonly reactify: UnwrapRef<typeof import('@vueuse/core')['reactify']>
     readonly reactifyObject: UnwrapRef<typeof import('@vueuse/core')['reactifyObject']>
@@ -564,6 +571,7 @@ declare module 'vue' {
     readonly reactiveOmit: UnwrapRef<typeof import('@vueuse/core')['reactiveOmit']>
     readonly reactivePick: UnwrapRef<typeof import('@vueuse/core')['reactivePick']>
     readonly readonly: UnwrapRef<typeof import('vue')['readonly']>
+    readonly realtimeTelemetryApi: UnwrapRef<typeof import('./api/iot/telemetry')['realtimeTelemetryApi']>
     readonly ref: UnwrapRef<typeof import('vue')['ref']>
     readonly refAutoReset: UnwrapRef<typeof import('@vueuse/core')['refAutoReset']>
     readonly refDebounced: UnwrapRef<typeof import('@vueuse/core')['refDebounced']>
@@ -584,6 +592,7 @@ declare module 'vue' {
     readonly shallowRef: UnwrapRef<typeof import('vue')['shallowRef']>
     readonly store: UnwrapRef<typeof import('./store/index')['store']>
     readonly storeToRefs: UnwrapRef<typeof import('pinia')['storeToRefs']>
+    readonly summaryTelemetryHistoryApi: UnwrapRef<typeof import('./api/iot/telemetry')['summaryTelemetryHistoryApi']>
     readonly syncRef: UnwrapRef<typeof import('@vueuse/core')['syncRef']>
     readonly syncRefs: UnwrapRef<typeof import('@vueuse/core')['syncRefs']>
     readonly sysBusyApi: UnwrapRef<typeof import('./api/example/exceptions')['sysBusyApi']>
@@ -595,6 +604,7 @@ declare module 'vue' {
     readonly toRef: UnwrapRef<typeof import('vue')['toRef']>
     readonly toRefs: UnwrapRef<typeof import('vue')['toRefs']>
     readonly toValue: UnwrapRef<typeof import('vue')['toValue']>
+    readonly trendTelemetryHistoryApi: UnwrapRef<typeof import('./api/iot/telemetry')['trendTelemetryHistoryApi']>
     readonly triggerRef: UnwrapRef<typeof import('vue')['triggerRef']>
     readonly tryOnBeforeMount: UnwrapRef<typeof import('@vueuse/core')['tryOnBeforeMount']>
     readonly tryOnBeforeUnmount: UnwrapRef<typeof import('@vueuse/core')['tryOnBeforeUnmount']>

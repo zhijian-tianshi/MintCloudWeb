@@ -1,0 +1,83 @@
+export const historyColumns = [
+  {
+    title: '#',
+    type: 'number',
+    width: '50px',
+    fixed: 'left',
+  },
+  {
+    key: 'deviceId',
+    title: '设备ID',
+    minWidth: '130px',
+    fixed: 'left',
+  },
+  {
+    key: 'windowStart',
+    title: '窗口开始',
+    width: '170px',
+    sort: true,
+    align: 'center',
+  },
+  {
+    key: 'windowEnd',
+    title: '窗口结束',
+    width: '170px',
+    align: 'center',
+  },
+  {
+    key: 'sampleCount',
+    title: '采样数',
+    width: '90px',
+    align: 'center',
+  },
+  {
+    key: 'tempAvg',
+    title: '温度均值',
+    width: '110px',
+    align: 'center',
+  },
+  {
+    key: 'humidityAvg',
+    title: '湿度均值',
+    width: '110px',
+    align: 'center',
+  },
+  {
+    key: 'pm25Avg',
+    title: 'PM2.5均值',
+    width: '110px',
+    align: 'center',
+  },
+  {
+    key: 'co2Avg',
+    title: 'CO2均值',
+    width: '110px',
+    align: 'center',
+  },
+  {
+    key: 'tvocAvg',
+    title: 'TVOC均值',
+    width: '110px',
+    align: 'center',
+  },
+  {
+    key: 'aqiAvg',
+    title: 'AQI均值',
+    width: '100px',
+    align: 'center',
+  },
+  {
+    key: 'motionCount',
+    title: '人体次数',
+    width: '100px',
+    align: 'center',
+  },
+  {
+    key: 'motionAny',
+    title: '有人体',
+    width: '90px',
+    align: 'center',
+    customSlot: 'motionAny',
+    fixed: 'right',
+  },
+]
